@@ -1,0 +1,6 @@
+.vs
+x64
+*.user
+profile.json
+profile.txt
+*.exe

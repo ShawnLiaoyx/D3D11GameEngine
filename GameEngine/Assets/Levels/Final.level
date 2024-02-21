@@ -1,0 +1,661 @@
+{
+    "metadata": {
+        "type": "level",
+        "version": 2
+    },
+
+    "camera": {
+        "position": [ -200.0, 0.0, 100.0 ],
+        "rotation": [ 0.0, 0.0, 0.0, 1.0 ]
+    },
+
+    "lightingData": {
+        "ambient": [ 0.1, 0.1, 0.1 ]
+    },
+
+  "renderObjects": [
+    {
+      "position": [ 0.0, 0.0, 50.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.5,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 1.0, 0.0 ],
+          "innerRadius": 125.0,
+          "outerRadius": 250.0
+        }
+      ]
+    },
+    {
+      "position": [ 650.0, 0.0, 50.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.5,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 0.0, 1.0 ],
+          "innerRadius": 125.0,
+          "outerRadius": 250.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 650.0, 50.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.5,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "PointLight",
+          "lightColor": [ 1.0, 0.0, 0.0 ],
+          "innerRadius": 125.0,
+          "outerRadius": 250.0
+        }
+      ]
+    },
+    {
+      "position": [ 650.0, 650.0, 50.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.5,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "PointLight",
+          "lightColor": [ 1.0, 1.0, 0.0 ],
+          "innerRadius": 125.0,
+          "outerRadius": 250.0
+        }
+      ]
+    },
+
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 0.0,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 1.0, 0.0, 0.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 0.2,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 1.0, 0.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 0.4,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 0.0, 1.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 0.6,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 1.0, 0.0, 0.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 0.8,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 1.0, 0.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 1.0,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 0.0, 1.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 1.2,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 1.0, 0.0, 0.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 1.4,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 1.0, 0.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 1.6,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 0.0, 1.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 1.8,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 1.0, 0.0, 0.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 2.0,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 1.0, 0.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 2.2,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 0.0, 1.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 2.4,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 1.0, 0.0, 0.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 2.6,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 1.0, 0.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 2.8,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 0.0, 1.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 3.0,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 1.0, 0.0, 0.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 3.2,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 1.0, 0.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 3.4,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 0.0, 1.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 3.6,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 1.0, 0.0, 0.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 3.8,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 1.0, 0.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 100.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.1,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "FlyingLight",
+          "startAngle": 4.0,
+          "radius": 50.0,
+          "rotSpeed": 3.0,
+          "zSpeed": 1.0,
+          "zHeight": 50.0
+        },
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 0.0, 1.0 ],
+          "innerRadius": 10.0,
+          "outerRadius": 100.0
+        }
+      ]
+    },
+
+
+    {
+      "position": [ 650.0, 0.0, 50.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.5,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "PointLight",
+          "lightColor": [ 0.0, 0.0, 1.0 ],
+          "innerRadius": 125.0,
+          "outerRadius": 250.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 650.0, 50.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.5,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "PointLight",
+          "lightColor": [ 1.0, 0.0, 0.0 ],
+          "innerRadius": 125.0,
+          "outerRadius": 250.0
+        }
+      ]
+    },
+    {
+      "position": [ 650.0, 650.0, 50.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 0.5,
+      "mesh": "Assets/Meshes/LightSphere.mesh3",
+      "components": [
+        {
+          "type": "PointLight",
+          "lightColor": [ 1.0, 1.0, 0.0 ],
+          "innerRadius": 125.0,
+          "outerRadius": 250.0
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 0.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 5.0,
+      "mesh": "Assets/Meshes/PlatformNormal.mesh3",
+      "components": [
+        {
+          "type": "CollisionBox",
+          "min": [ -50.0, -50.0, -1.0 ],
+          "max": [ 50.0, 50.0, 0.0 ]
+        },
+        {
+          "type": "SimpleRotate",
+          "speed": 1.0
+        }
+      ]
+    },
+    {
+      "position": [ 650.0, 0.0, 0.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 5.0,
+      "mesh": "Assets/Meshes/PlatformNormal_2.mesh3",
+      "components": [
+        {
+          "type": "CollisionBox",
+          "min": [ -50.0, -50.0, -1.0 ],
+          "max": [ 50.0, 50.0, 0.0 ]
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 650.0, 0.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 5.0,
+      "mesh": "Assets/Meshes/PlatformNormal_3.mesh3",
+      "components": [
+        {
+          "type": "CollisionBox",
+          "min": [ -50.0, -50.0, -1.0 ],
+          "max": [ 50.0, 50.0, 0.0 ]
+        }
+      ]
+    },
+    {
+      "position": [ 650.0, 650.0, 0.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 5.0,
+      "mesh": "Assets/Meshes/Platform.mesh3",
+      "components": [
+        {
+          "type": "CollisionBox",
+          "min": [ -50.0, -50.0, -1.0 ],
+          "max": [ 50.0, 50.0, 0.0 ]
+        }
+      ]
+    },
+    {
+      "position": [ 0.0, 0.0, 0.0 ],
+      "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+      "scale": 1.0,
+      "mesh": "Assets/Meshes/SK_Mannequin.mesh3",
+      "components": [
+        {
+          "type": "Player",
+          "skeleton": "Assets/Anims/SK_Mannequin.skel",
+          "animations": [
+            [ "idle", "Assets/Anims/ThirdPersonIdle.anim2" ],
+            [ "run", "Assets/Anims/ThirdPersonRun.anim2" ],
+            [ "jumpStart", "Assets/Anims/ThirdPersonJump_Start.anim2" ],
+            [ "jump", "Assets/Anims/ThirdPersonJump_Loop.anim2" ],
+            [ "land", "Assets/Anims/ThirdPersonJump_End.anim2" ],
+            [ "fall", "Assets/Anims/ThirdPersonJump_Loop.anim2" ]
+          ]
+        },
+        {
+          "type": "FollowCam",
+          "offset": [ -200.0, 0.0, 100.0 ]
+        }
+      ]
+    }
+  ]
+}
