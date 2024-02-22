@@ -25,9 +25,6 @@ static const float m4Ident[4][4] =
 
 const SIMDMatrix4 SIMDMatrix4::Identity(m4Ident);
 
-// Matt Whiting -- these are just copies of the floating point math.  
-// Maybe someday I'll make pure SIMD versions of these...
-// But not today.
 void SIMDMatrix4::Invert()
 {
     // Thanks slow math

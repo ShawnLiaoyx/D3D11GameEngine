@@ -38,6 +38,8 @@
     <ClCompile Include="Profiler.cpp" />
     <ClCompile Include="RenderObj.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="simdMath.cpp" />
+    <ClCompile Include="simdMath_UnitTest.cpp" />
     <ClCompile Include="Skeleton.cpp" />
     <ClCompile Include="SkinnedObj.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -73,6 +75,7 @@
     <ClInclude Include="Profiler.h" />
     <ClInclude Include="RenderObj.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="simdMath.h" />
     <ClInclude Include="Skeleton.h" />
     <ClInclude Include="SkinnedObj.h" />
     <ClInclude Include="stdafx.h" />

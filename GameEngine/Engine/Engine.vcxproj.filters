@@ -85,6 +85,12 @@
     <ClCompile Include="GBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="simdMath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simdMath_UnitTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="assetCache.h">
@@ -175,6 +181,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="GBuffer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simdMath.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

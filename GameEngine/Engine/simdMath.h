@@ -45,48 +45,36 @@ public:
     // Vector addition (a + b)
     friend SIMDVector3 operator+(const SIMDVector3& a, const SIMDVector3& b)
     {
-        // TODO Lab 01g
-        // COMPLETED
         return SIMDVector3(_mm_add_ps(a.mVec, b.mVec));
     }
 
     // Vector subtraction (a - b)
     friend SIMDVector3 operator-(const SIMDVector3& a, const SIMDVector3& b)
     {
-        // TODO Lab 01g
-        // COMPLETED
         return SIMDVector3(_mm_sub_ps(a.mVec, b.mVec));
     }
 
     // Component-wise multiplication
     friend SIMDVector3 operator*(const SIMDVector3& a, const SIMDVector3& b)
     {
-        // TODO Lab 01g
-        // COMPLETED
         return SIMDVector3(_mm_mul_ps(a.mVec, b.mVec));
     }
 
     // Scalar multiplication
     friend SIMDVector3 operator*(const SIMDVector3& vec, float scalar)
     {
-        // TODO Lab 01g
-        // COMPLETED
         return SIMDVector3(_mm_mul_ps(vec.mVec, _mm_set_ps1(scalar)));
     }
 
     // Scalar multiplication
     friend SIMDVector3 operator*(float scalar, const SIMDVector3& vec)
     {
-        // TODO Lab 01g
-        // COPMLETED
         return SIMDVector3(_mm_mul_ps(_mm_set_ps1(scalar), vec.mVec));
     }
 
     // Scalar *=
     SIMDVector3& operator*=(float scalar)
     {
-        // TODO Lab 01g
-        // COMPLETED
         this->mVec = _mm_mul_ps(this->mVec, _mm_set_ps1(scalar));
         return *this;
     }
@@ -94,16 +82,12 @@ public:
     // Scalar division
     friend SIMDVector3 operator/(const SIMDVector3& vec, float scalar)
     {
-        // TODO Lab 01g
-        // COMPLETED
         return SIMDVector3(_mm_mul_ps(vec.mVec, _mm_set_ps1(1 / scalar)));
     }
 
     // Scalar /=
     SIMDVector3& operator/=(float scalar)
     {
-        // TODO Lab 01g
-        // COMPLETED
         this->mVec = _mm_mul_ps(this->mVec, _mm_set_ps1(1 / scalar));
         return *this;
     }
@@ -111,8 +95,6 @@ public:
     // Vector +=
     SIMDVector3& operator+=(const SIMDVector3& right)
     {
-        // TODO Lab 01g
-        // COMPLETED
         this->mVec = _mm_add_ps(this->mVec, right.mVec);
         return *this;
     }
@@ -120,8 +102,6 @@ public:
     // Vector -=
     SIMDVector3& operator-=(const SIMDVector3& right)
     {
-        // TODO Lab 01g
-        // COMPLETED
         this->mVec = _mm_sub_ps(this->mVec, right.mVec);
         return *this;
     }
@@ -129,72 +109,54 @@ public:
     // Length squared of vector (as a vector)
     SIMDVector3 LengthSq_v() const
     {
-        // TODO Lab 01g
-        // COMPLETED
         return SIMDVector3(_mm_dp_ps(this->mVec, this->mVec, 0xFF));
     }
 
     // Length squared of vector
     float LengthSq() const
     {
-        // TODO Lab 01g
-        // COMPLETED
         return _mm_dp_ps(this->mVec, this->mVec, 0xFF).m128_f32[0];
     }
 
     // Length of vector (as a vector)
     SIMDVector3 Length_v() const
     {
-        // TODO Lab 01g
-        // COMPLETED
         return SIMDVector3(_mm_sqrt_ps(_mm_dp_ps(this->mVec, this->mVec, 0xFF)));
     }
 
     // Length of vector
     float Length() const
     {
-        // TODO Lab 01g
-        // COMPLETED
         return _mm_sqrt_ps(_mm_dp_ps(this->mVec, this->mVec, 0xFF)).m128_f32[0];
     }
 
     // Normalize this vector
     void Normalize()
     {
-        // TODO Lab 01g
-        // COMPLETED
         this->mVec = _mm_mul_ps(this->mVec, _mm_rsqrt_ps(_mm_dp_ps(this->mVec, this->mVec, 0xFF)));
     }
 
     // Normalize the provided vector
     friend SIMDVector3 Normalize(const SIMDVector3& vec)
     {
-        // TODO Lab 01g
-        // COMPLETED
         return SIMDVector3(_mm_mul_ps(vec.mVec, _mm_rsqrt_ps(_mm_dp_ps(vec.mVec, vec.mVec, 0xFF))));
     }
 
     // Dot product between two vectors (a dot b) (as a vector)
     friend SIMDVector3 Dot_v(const SIMDVector3& a, const SIMDVector3& b)
     {
-        // TODO Lab 01g
-        // COMPLETED
         return SIMDVector3(_mm_dp_ps(a.mVec, b.mVec, 0xFF));
     }
 
     // Dot product between two vectors (a dot b)
     friend float Dot(const SIMDVector3& a, const SIMDVector3& b)
     {
-        // TODO Lab 01g
-        // COMPLETED
         return _mm_dp_ps(a.mVec, b.mVec, 0xFF).m128_f32[0];
     }
 
     // Cross product between two vectors (a cross b)
     friend SIMDVector3 Cross(const SIMDVector3& a, const SIMDVector3& b)
     {
-        // TODO Lab 01g
-        // COMPLETED
         __m128 tempA = _mm_shuffle_ps(a.mVec, a.mVec, _MM_SHUFFLER(1, 2, 0, 3));
         __m128 tempB = _mm_shuffle_ps(b.mVec, b.mVec, _MM_SHUFFLER(2, 0, 1, 3));
         __m128 result = _mm_mul_ps(tempA, tempB);
@@ -207,8 +169,6 @@ public:
     // Lerp from A to B by f
     friend SIMDVector3 Lerp(const SIMDVector3& a, const SIMDVector3& b, float f)
     {
-        // TODO Lab 01g
-        // COMPLETED
         return SIMDVector3(_mm_add_ps(a.mVec, _mm_mul_ps(_mm_sub_ps(b.mVec, a.mVec), _mm_set_ps1(f))));
     }
 
@@ -256,48 +216,36 @@ public:
     // Vector addition (a + b)
     friend SIMDVector4 operator+(const SIMDVector4& a, const SIMDVector4& b)
     {
-        // TODO Lab 01h
-        // COMPLETED
         return SIMDVector4(_mm_add_ps(a.mVec, b.mVec));
     }
 
     // Vector subtraction (a - b)
     friend SIMDVector4 operator-(const SIMDVector4& a, const SIMDVector4& b)
     {
-        // TODO Lab 01h
-        // COMPLETED
         return SIMDVector4(_mm_sub_ps(a.mVec, b.mVec));
     }
 
     // Component-wise multiplication
     friend SIMDVector4 operator*(const SIMDVector4& a, const SIMDVector4& b)
     {
-        // TODO Lab 01h
-        // COMPLETED
         return SIMDVector4(_mm_mul_ps(a.mVec, b.mVec));
     }
 
     // Scalar multiplication
     friend SIMDVector4 operator*(const SIMDVector4& vec, float scalar)
     {
-        // TODO Lab 01h
-        // COMPLETED
         return SIMDVector4(_mm_mul_ps(vec.mVec, _mm_set_ps1(scalar)));
     }
 
     // Scalar multiplication
     friend SIMDVector4 operator*(float scalar, const SIMDVector4& vec)
     {
-        // TODO Lab 01h
-        // COMPLETED
         return SIMDVector4(_mm_mul_ps(_mm_set_ps1(scalar), vec.mVec));
     }
 
     // Scalar *=
     SIMDVector4& operator*=(float scalar)
     {
-        // TODO Lab 01h
-        // COMPLETED
         this->mVec = _mm_mul_ps(this->mVec, _mm_set_ps1(scalar));
         return *this;
     }
@@ -305,16 +253,12 @@ public:
     // Scalar division
     friend SIMDVector4 operator/(const SIMDVector4& vec, float scalar)
     {
-        // TODO Lab 01h
-        // COMPLETED
         return SIMDVector4(_mm_mul_ps(vec.mVec, _mm_set_ps1(1 / scalar)));
     }
 
     // Scalar /=
     SIMDVector4& operator/=(float scalar)
     {
-        // TODO Lab 01h
-        // COMPLETED
         this->mVec = _mm_mul_ps(this->mVec, _mm_set_ps1(1 / scalar));
         return *this;
     }
@@ -322,8 +266,6 @@ public:
     // Vector +=
     SIMDVector4& operator+=(const SIMDVector4& right)
     {
-        // TODO Lab 01h
-        // COMPLETED
         this->mVec = _mm_add_ps(this->mVec, right.mVec);
         return *this;
     }
@@ -331,8 +273,6 @@ public:
     // Vector -=
     SIMDVector4& operator-=(const SIMDVector4& right)
     {
-        // TODO Lab 01h
-        // COMPLETED
         this->mVec = _mm_sub_ps(this->mVec, right.mVec);
         return *this;
     }
@@ -340,72 +280,54 @@ public:
     // Length squared of vector (as a vector)
     SIMDVector4 LengthSq_v() const
     {
-        // TODO Lab 01h
-        // COMPLETED
         return SIMDVector4(_mm_dp_ps(this->mVec, this->mVec, 0xFF));
     }
 
     // Length squared of vector
     float LengthSq() const
     {
-        // TODO Lab 01h
-        // COMPLETED
         return _mm_dp_ps(this->mVec, this->mVec, 0xFF).m128_f32[0];
     }
 
     // Length of vector (as a vector)
     SIMDVector4 Length_v() const
     {
-        // TODO Lab 01h
-        // COMPLETED
         return SIMDVector4(_mm_sqrt_ps(_mm_dp_ps(this->mVec, this->mVec, 0xFF)));
     }
 
     // Length of vector
     float Length() const
     {
-        // TODO Lab 01h
-        // COMPLETED
         return _mm_sqrt_ps(_mm_dp_ps(this->mVec, this->mVec, 0xFF)).m128_f32[0];
     }
 
     // Normalize this vector
     void Normalize()
     {
-        // TODO Lab 01h
-        // COMPLETED
         this->mVec = _mm_mul_ps(this->mVec, _mm_rsqrt_ps(_mm_dp_ps(this->mVec, this->mVec, 0xFF)));
     }
 
     // Normalize the provided vector
     friend SIMDVector4 Normalize(const SIMDVector4& vec)
     {
-        // TODO Lab 01h
-        // COMPLETED
         return SIMDVector4(_mm_mul_ps(vec.mVec, _mm_rsqrt_ps(_mm_dp_ps(vec.mVec, vec.mVec, 0xFF))));
     }
 
     // Dot product between two vectors (a dot b) (as a vector)
     friend SIMDVector4 Dot_v(const SIMDVector4& a, const SIMDVector4& b)
     {
-        // TODO Lab 01h
-        // COMPLETED
         return SIMDVector4(_mm_dp_ps(a.mVec, b.mVec, 0xFF));
     }
 
     // Dot product between two vectors (a dot b)
     friend float Dot(const SIMDVector4& a, const SIMDVector4& b)
     {
-        // TODO Lab 01h
-        // COMPLETED
         return _mm_dp_ps(a.mVec, b.mVec, 0xFF).m128_f32[0];
     }
 
     // Cross product between two vectors (a cross b) (assumes w = 0)
     friend SIMDVector4 Cross(const SIMDVector4& a, const SIMDVector4& b)
     {
-        // TODO Lab 01h
-        // COMPLETED
         __m128 tempA = _mm_shuffle_ps(a.mVec, a.mVec, _MM_SHUFFLER(1, 2, 0, 3));
         __m128 tempB = _mm_shuffle_ps(b.mVec, b.mVec, _MM_SHUFFLER(2, 0, 1, 3));
         __m128 result = _mm_mul_ps(tempA, tempB);
@@ -418,8 +340,6 @@ public:
     // Lerp from A to B by f
     friend SIMDVector4 Lerp(const SIMDVector4& a, const SIMDVector4& b, float f)
     {
-        // TODO Lab 01h
-        // COMPLETED
         return SIMDVector4(_mm_add_ps(a.mVec, _mm_mul_ps(_mm_sub_ps(b.mVec, a.mVec), _mm_set_ps1(f))));
     }
 
@@ -657,19 +577,19 @@ public:
         return SIMDMatrix4(temp);
     }
 
-    static SIMDMatrix4 CreateOrtho(float width, float height, float near, float far)
+    static SIMDMatrix4 CreateOrtho(float width, float height, float nearD, float farD)
     {
         float temp[4][4] =
         {
             { 2.0f / width, 0.0f, 0.0f, 0.0f },
             { 0.0f, 2.0f / height, 0.0f, 0.0f },
-            { 0.0f, 0.0f, 1.0f / (far - near), 0.0f },
-            { 0.0f, 0.0f, near / (near - far), 1.0f }
+            { 0.0f, 0.0f, 1.0f / (farD - nearD), 0.0f },
+            { 0.0f, 0.0f, nearD / (nearD - farD), 1.0f }
         };
         return SIMDMatrix4(temp);
     }
 
-    static SIMDMatrix4 CreatePerspectiveFOV(float fovY, float width, float height, float near, float far)
+    static SIMDMatrix4 CreatePerspectiveFOV(float fovY, float width, float height, float nearD, float farD)
     {
         float yScale = 1.0f / tanf(fovY / 2.0f);
         float xScale = yScale * height / width;
@@ -677,8 +597,8 @@ public:
         {
             { xScale, 0.0f, 0.0f, 0.0f },
             { 0.0f, yScale, 0.0f, 0.0f },
-            { 0.0f, 0.0f, far / (far - near), 1.0f },
-            { 0.0f, 0.0f, -near * far / (far - near), 0.0f }
+            { 0.0f, 0.0f, farD / (farD - nearD), 1.0f },
+            { 0.0f, 0.0f, -nearD * farD / (farD - nearD), 0.0f }
         };
         return SIMDMatrix4(temp);
     }
